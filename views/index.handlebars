@@ -1,0 +1,48 @@
+<header>
+    <img src="/assets/img/burgerImg.png" alt="Burger Image" height="350" width="350">
+    <h1>Eat Some Burgers!</h1>
+</header>
+
+<div class="center bodyContainer">
+    <div id="burgerContainer">
+        <p class="titles">Undevoured</p>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <button class="burgerBtn" data-id="{{id}}">{{burger_name}}</button>
+        {{/unless}}
+        {{/each}}
+    </div>
+
+    <div id="devouredContainer">
+        <p class="titles">Devoured</p>
+        {{#each burgers}}
+        {{#if devoured}}
+        <button class="devouredBurger">{{burger_name}}</button>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+<button id="addBurger" class="center">Add a Burger!</button>
+
+
+<div id="burgerModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add a new Burger</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="newBurger">
+                    <p id="error"></p>
+                    <input id="burgerName" type="text">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div>

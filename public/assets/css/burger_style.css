@@ -1,0 +1,90 @@
+/* 
+/
+/   ELEMENTS
+/
+*/
+body {
+    background-color: #ce6700;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: -20px 0px 20px 0px;
+}
+
+
+/* 
+/
+/   CLASSES
+/
+*/
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.burgerBtn, .devouredBurger {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #ff860d;
+    color: #351500;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.burgerBtn:hover {
+    transform: scale(1.1);
+}
+
+.bodyContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.titles {
+    margin-bottom: 5px;
+    padding: 3px 3px 0px 3px;
+    background-color: #ff860d;
+    color: #351500;
+    border: 3px solid #351500;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* 
+/
+/   IDS
+/
+*/
+#burgerContainer, #devouredContainer {
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px 10px;
+    padding: 5px 10px 10px 10px;
+    min-height: 20px;
+    min-width: 200px;
+    display: inline-block;
+    background-color: #7c3201;
+}
+
+#addBurger {
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #7c3201;
+    color: #ff860d;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#addBurger:hover {
+    transform: scale(1.1);
+}
